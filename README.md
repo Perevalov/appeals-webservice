@@ -28,6 +28,14 @@ docker run -it -p 8080:8080 appeals-webservice`
 ## Примеры использования
 Пример взаимодействия с UI:
 
+Внешний вид главной страницы сервиса
+![Главная страница сервиса](https://github.com/Perevalov/appeals-webservice/blob/master/resources/homepage.jpg)
+
+Пример взаимодействия №1
+![Пример взаимодействия №1](https://github.com/Perevalov/appeals-webservice/blob/master/resources/example1.jpg)
+
+Пример взаимодействия №2
+![Пример взаимодействия №2](https://github.com/Perevalov/appeals-webservice/blob/master/resources/example2.jpg)
 
 Пример взаимодействия с API на Python:
 
