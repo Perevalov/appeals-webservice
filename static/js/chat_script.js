@@ -43,7 +43,7 @@
 		  }, 2000);
 		  var data = [text];
 
-            $.get("http://localhost:8080/classify", {prediction_data: JSON.stringify(data), user_mode: JSON.stringify(true)}).done(function(data) {
+            $.get("https://appeals-webservice.herokuapp.com/classify", {prediction_data: JSON.stringify(data), user_mode: JSON.stringify(true)}).done(function(data) {
                 resp = JSON.parse(data);
                 sendMessage(resp['response_text'],'left');
             });
