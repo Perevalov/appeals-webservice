@@ -31,7 +31,8 @@ docker run -it -p 8080:8080 appeals-webservice`
 
 Пример взаимодействия с API на Python:
 
-```import requests, json
+```
+import requests, json
 
 if __name__ == "__main__":
 	prediction_data = ["В нашем городе очень плохие дороги. Много выбоин и ям", "У нас в подъезде валяется мусор, он пахнет. Уберите пожалуйста",]
