@@ -15,12 +15,13 @@
 ## Сценарий сборки и запуска проекта
 
 Для запуска через Docker необходимо выполнить следующие команды (находясь в корневой папке проекта):
+
 `docker build -t appeals-webservice:latest .
 docker run -it -p 8080:8080 appeals-webservice`
 
 Если у вас установлен Python 3.6 и pip, можно запустить проект следующими командами:
-`pip install -r requirements.txt
-python app.py`
+
+`pip install -r requirements.txt python app.py`
 
 В обоих случаях приложение запускается на локальной машине по адресу 0.0.0.0:8080
 
@@ -29,7 +30,8 @@ python app.py`
 
 
 Пример взаимодействия с API на Python:
-`import requests, json
+
+```import requests, json
 
 if __name__ == "__main__":
 	prediction_data = ["В нашем городе очень плохие дороги. Много выбоин и ям", "У нас в подъезде валяется мусор, он пахнет. Уберите пожалуйста",]
@@ -38,4 +40,4 @@ if __name__ == "__main__":
 	print(response.json())
 
 	response = requests.get(url='http://localhost:8080/classify', params={'prediction_data': json.dumps(prediction_data), 'predict_proba': json.dumps(False), 'user_mode': json.dumps(False)})
-	print(response.json())`
+	print(response.json())```
